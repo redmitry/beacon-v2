@@ -2,14 +2,14 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "additionalProperties": true,
     "definitions": {
-        "ResultsetInstance": {
+        "CountSetInstance": {
             "additionalProperties": true,
             "properties": {
                 "exists": {
                     "type": "boolean"
                 },
                 "id": {
-                    "description": "id of the resultset",
+                    "description": "id of the set",
                     "example": "datasetA",
                     "type": "string"
                 },
@@ -17,15 +17,8 @@
                     "description": "Additional details that could be of interest about the Resultset. Provided to clearly enclose any attribute that is not part of the Beacon specification.",
                     "type": "object"
                 },
-                "results": {
-                    "items": {
-                        "type": "object"
-                    },
-                    "minItems": 0,
-                    "type": "array"
-                },
                 "resultsCount": {
-                    "description": "Number of results in this Resultset.",
+                    "description": "Number of results in this set.",
                     "type": "integer"
                 },
                 "resultsHandovers": {
@@ -42,27 +35,26 @@
                 "id",
                 "setType",
                 "exists",
-                "resultsCount",
-                "results"
+                "resultsCount"
             ]
         }
     },
-    "description": "Sets of detail-level results to be returned as query response.",
+    "description": "Sets of Boolean results to be returned as query response.",
     "properties": {
         "$schema": {
             "$ref": "../../common/beaconCommonComponents.json#/definitions/$schema"
         },
         "resultSets": {
             "items": {
-                "$ref": "#/definitions/ResultsetInstance"
+                "$ref": "#/definitions/CountSetInstance"
             },
             "minItems": 0,
             "type": "array"
         }
     },
     "required": [
-        "resultSets"
+      "resultSets"
     ],
-    "title": "Beacon ResultSet",
+    "title": "Beacon CountSets",
     "type": "object"
 }

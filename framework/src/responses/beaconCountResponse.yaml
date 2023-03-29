@@ -1,7 +1,6 @@
 $schema: https://json-schema.org/draft/2020-12/schema
 description: >-
-  Complete definition for a response that does not include record level
-  details but provides `Boolean` and `count` information.
+  Complete definition for a response that does not include record level  details but provides `Boolean` and `count` information.
 type: object
 properties:
   meta:
@@ -23,6 +22,11 @@ properties:
       List of handovers that apply to the whole response, not to any resultset
       or result in particular.
     $ref: ../common/beaconCommonComponents.yaml#/definitions/ListOfHandovers
+  response:
+    description: >-
+      Responses by resultset, e.g. separate datasets.
+    $ref: ./sections/beaconCountSets.yaml
 required:
   - meta
   - responseSummary
+additionalProperties: true
