@@ -18,8 +18,12 @@
                     "type": "object"
                 },
                 "results": {
+                    "$defs": {
+                       "$dynamicAnchor": "entry",
+                       "type": "object”
+                    },
                     "items": {
-                        "type": "object"
+                        "$dynamicRef": "#entry"
                     },
                     "minItems": 0,
                     "type": "array"
