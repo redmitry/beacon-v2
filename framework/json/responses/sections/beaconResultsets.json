@@ -19,11 +19,11 @@
                 },
                 "results": {
                     "$defs": {
-                       "$dynamicAnchor": "entry",
-                       "type": "object”
+                       "$dynamicAnchor": "resultsEntryType",
+                       "type": "object"
                     },
                     "items": {
-                        "$dynamicRef": "#entry"
+                        "$dynamicRef": "#resultsEntryType"
                     },
                     "minItems": 0,
                     "type": "array"
