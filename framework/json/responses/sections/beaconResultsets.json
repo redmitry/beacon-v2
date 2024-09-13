@@ -19,8 +19,10 @@
                 },
                 "results": {
                     "$defs": {
-                       "$dynamicAnchor": "resultsEntryType",
-                       "type": "object"
+                        "defaultResultsEntryType": {
+                            "$dynamicAnchor": "resultsEntryType",
+                            "type": "object"
+                        }
                     },
                     "items": {
                         "$dynamicRef": "#resultsEntryType"
