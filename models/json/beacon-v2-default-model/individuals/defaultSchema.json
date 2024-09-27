@@ -70,6 +70,15 @@
                 "$ref": "../common/treatment.json"
             },
             "type": "array"
+        },
+        "cohortIds": {
+            "description": "List of cohort studies this individual is member of.",
+            "items": {
+                "description": "Cohort identifier (internal ID).",
+                "example": "CANCER_STUDY_001",
+                "type": "string"
+            },
+            "type": "array"
         }
     },
     "required": [
