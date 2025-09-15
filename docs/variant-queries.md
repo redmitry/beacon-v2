@@ -55,12 +55,12 @@ in the _EIF4A1_ eukaryotic translation initiation factor 4A1.
 	                "referenceBases": "G",
 	                "alternateBases": "A"
 		    	}
+	        },
+	        "requestedGranularity": "record",
+	        "pagination": {
+	            "skip": 0,
+	            "limit": 5
 	        }
-	    },
-	    "requestedGranularity": "record",
-	    "pagination": {
-	        "skip": 0,
-	        "limit": 5
 	    }
 	}
 	```
@@ -146,12 +146,12 @@ parameters.
 	                "start": [ 7572837 ],
 	                "end": [ 7578641 ]
 		    	}
+	        },
+	        "requestedGranularity": "record",
+	        "pagination": {
+	            "skip": 0,
+	            "limit": 5
 	        }
-	    },
-	    "requestedGranularity": "record",
-	    "pagination": {
-	        "skip": 0,
-	        "limit": 5
 	    }
 	}
 	```
@@ -259,12 +259,12 @@ larger than approx. 5Mb (operational definitions of focality vary between 1 and 
 	                "end": [ 7669607, 10000000 ],
 	                "variantType": "DEL"
 		    	}
+	        },
+	        "requestedGranularity": "record",
+	        "pagination": {
+	            "skip": 0,
+	            "limit": 5
 	        }
-	    },
-	    "requestedGranularity": "record",
-	    "pagination": {
-	        "skip": 0,
-	        "limit": 5
 	    }
 	}
 	```
